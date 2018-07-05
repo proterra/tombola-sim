@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Raffle Project</title>
+
+</head>
+
+<body>
+    <h1>Raffle</h1>
+
+
+
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <script>
+        $(function () {
+
+            var ctx = document.getElementById("chart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels:
+["draw-001","draw-002","draw-003","draw-004","draw-005","draw-006","draw-007","draw-008","draw-009","draw-010","draw-011","draw-012","draw-013","draw-014","draw-015","draw-016","draw-017","draw-018","draw-019","draw-020","draw-021","draw-022","draw-023","draw-024","draw-025","draw-026","draw-027","draw-028","draw-029","draw-030","draw-031","draw-032","draw-033","draw-034","draw-035","draw-036","draw-037","draw-038","draw-039","draw-040","draw-041","draw-042","draw-043","draw-044","draw-045","draw-046","draw-047","draw-048","draw-049","draw-050","draw-051","draw-052","draw-053","draw-054","draw-055","draw-056","draw-057","draw-058","draw-059","draw-060","draw-061","draw-062","draw-063","draw-064","draw-065","draw-066","draw-067","draw-068","draw-069","draw-070","draw-071","draw-072","draw-073","draw-074","draw-075","draw-076","draw-077","draw-078","draw-079","draw-080","draw-081","draw-082","draw-083","draw-084","draw-085","draw-086","draw-087","draw-088","draw-089","draw-090","draw-091","draw-092","draw-093","draw-094","draw-095","draw-096","draw-097","draw-098","draw-099","draw-100","draw-101","draw-102","draw-103","draw-104","draw-105","draw-106","draw-107","draw-108","draw-109","draw-110","draw-111","draw-112","draw-113","draw-114","draw-115","draw-116","draw-117","draw-118","draw-119","draw-120","draw-121","draw-122","draw-123","draw-124","draw-125","draw-126","draw-127","draw-128","draw-129","draw-130","draw-131","draw-132","draw-133","draw-134","draw-135","draw-136","draw-137","draw-138","draw-139","draw-140","draw-141","draw-142","draw-143","draw-144","draw-145","draw-146","draw-147","draw-148","draw-149","draw-150","draw-151","draw-152","draw-153","draw-154","draw-155","draw-156","draw-157","draw-158","draw-159","draw-160","draw-161","draw-162","draw-163","draw-164","draw-165","draw-166","draw-167","draw-168","draw-169","draw-170","draw-171","draw-172","draw-173","draw-174","draw-175","draw-176","draw-177","draw-178","draw-179","draw-180","draw-181","draw-182","draw-183","draw-184","draw-185","draw-186","draw-187","draw-188","draw-189","draw-190","draw-191","draw-192","draw-193","draw-194","draw-195","draw-196","draw-197","draw-198","draw-199","draw-200","draw-201","draw-202","draw-203","draw-204","draw-205","draw-206","draw-207","draw-208","draw-209","draw-210","draw-211","draw-212","draw-213","draw-214","draw-215","draw-216","draw-217","draw-218","draw-219","draw-220","draw-221","draw-222","draw-223","draw-224","draw-225","draw-226","draw-227","draw-228","draw-229","draw-230","draw-231","draw-232","draw-233","draw-234","draw-235","draw-236","draw-237","draw-238","draw-239","draw-240","draw-241","draw-242","draw-243","draw-244","draw-245","draw-246","draw-247","draw-248","draw-249","draw-250"]
+                     ,
+                    datasets: [{
+                        label: '# of Votes',
+                        data:
+[189,198,202,189,213,208,207,180,200,206,184,216,200,194,200,201,195,188,199,216,203,206,200,190,191,201,174,207,191,206,212,216,209,210,214,170,213,184,204,171,221,200,191,174,200,175,201,179,191,196,196,212,193,200,188,215,202,202,210,204,207,207,195,214,198,197,204,211,207,225,200,201,198,184,191,207,189,196,213,195,212,187,225,216,207,194,194,205,203,191,187,217,211,195,218,206,175,219,190,197,202,201,208,199,203,209,195,178,217,195,212,190,216,202,230,172,206,201,184,193,201,227,194,205,202,196,202,202,205,189,218,213,215,213,203,208,194,202,203,202,203,191,211,187,189,203,191,183,191,213,191,187,185,213,205,190,198,191,171,198,218,181,213,194,209,224,193,188,197,196,224,187,183,201,214,206,194,202,200,185,195,192,197,201,204,200,189,197,208,211,194,219,195,208,199,190,203,202,195,193,197,232,202,204,232,196,189,194,172,195,225,203,182,187,200,205,189,200,223,186,199,183,222,221,201,206,215,187,205,219,183,184,205,193,187,187,203,226,207,215,180,200,175,188,201,197,190,201,197,216]
+
+
+                        ,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
